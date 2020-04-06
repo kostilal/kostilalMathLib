@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		956F0019243B8133007AA1DB /* kostilalMathLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 956F0017243B8133007AA1DB /* kostilalMathLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		956F0020243B81A7007AA1DB /* KostilalMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F001F243B81A7007AA1DB /* KostilalMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		956F0014243B8133007AA1DB /* kostilalMathLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kostilalMathLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956F0017243B8133007AA1DB /* kostilalMathLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kostilalMathLib.h; sourceTree = "<group>"; };
 		956F0018243B8133007AA1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956F001F243B81A7007AA1DB /* KostilalMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KostilalMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				956F0017243B8133007AA1DB /* kostilalMathLib.h */,
 				956F0018243B8133007AA1DB /* Info.plist */,
+				956F001F243B81A7007AA1DB /* KostilalMath.swift */,
 			);
 			path = kostilalMathLib;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					956F0013243B8133007AA1DB = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956F0020243B81A7007AA1DB /* KostilalMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		956F001D243B8133007AA1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7WV8N8TKDH;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.evo.kostilalMathLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		956F001E243B8133007AA1DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7WV8N8TKDH;
